@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
+  <script>document.documentElement.classList.add("js");</script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>はじめの一歩｜ゼロからGrok Bot</title>
   <meta name="description" content="チャットに、してほしいことを書くコツと、そのまま使える文の例です。">
@@ -9,16 +10,20 @@
   <meta property="og:description" content="チャットに、してほしいことを書くコツと、そのまま使える文の例です。">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://mokumokumokunn.github.io/zero-kara-grokbot/first-step.html">
+  <meta property="og:image" content="https://mokumokumokunn.github.io/zero-kara-grokbot/og-image.png">
+  <meta property="og:site_name" content="ゼロからGrok Bot">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <p class="site-name"><a href="index.html">ゼロからGrok Bot</a></p>
-    <input class="nav-toggle" id="nav-toggle" type="checkbox" aria-controls="site-nav">
-    <label class="nav-toggle-label" for="nav-toggle">メニュー</label>
-    <nav id="site-nav" aria-label="ページ">
-        <ul>
+    <nav class="site-nav" aria-label="ページ">
+      <button type="button" class="nav-button" aria-expanded="false" aria-controls="site-nav-list">メニュー</button>
+      <ul id="site-nav-list">
           <li><a href="index.html">トップ</a></li>
           <li><a href="what.html">Grok Botとは</a></li>
           <li><a href="first-step.html" aria-current="page">はじめの一歩</a></li>
@@ -47,12 +52,14 @@
     <p>たとえば、次のように頼めます。</p>
     <figure class="ask">
       <figcaption>チャットに書ける文</figcaption>
-      <p>明日の朝会で話す、三分のあいさつ文を書いて。初めて参加する人にもわかる言葉で。社外秘の数字は入れないで。</p>
+      <p class="ask-text">明日の朝会で話す、三分のあいさつ文を書いて。初めて参加する人にもわかる言葉で。社外秘の数字は入れないで。</p>
+      <button type="button" class="copy-button">コピー</button>
     </figure>
     <p>答えがずれていたら、どこが違うかを伝えます。</p>
     <figure class="ask">
       <figcaption>チャットに書ける文</figcaption>
-      <p>もう少し短く。専門用語をやめて。</p>
+      <p class="ask-text">もう少し短く。専門用語をやめて。</p>
+      <button type="button" class="copy-button">コピー</button>
     </figure>
     <p>一つずつ頼んでも大丈夫です。長いお願いを、何度かに分けてもよいです。</p>
 
@@ -60,7 +67,8 @@
     <p>長く残してほしい事実は、会話の中で、残してほしいと伝えられます。</p>
     <figure class="ask">
       <figcaption>チャットに書ける文</figcaption>
-      <p>これは覚えておいて。私の名前はアオキです。朝は短く答えてほしい。</p>
+      <p class="ask-text">これは覚えておいて。私の名前はアオキです。朝は短く答えてほしい。</p>
+      <button type="button" class="copy-button">コピー</button>
     </figure>
     <p>これは決まった命令文ではありません。ふつうの言葉で、残してほしい事実だと伝わればよいです。</p>
     <p>ボットは、あなたについての長く残る事実を記憶できます。同じボットなら、次からその説明を省けます。</p>
@@ -74,5 +82,6 @@
     <p>次は「安全に使う」です。</p>
     <a class="next-button" href="safety.html">次はこれ</a>
   </footer>
+  <script src="site.js"></script>
 </body>
 </html>
