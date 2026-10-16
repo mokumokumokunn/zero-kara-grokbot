@@ -49,6 +49,14 @@ main,
   text-decoration: none;
 }
 
+.nav-wrap summary {
+  min-height: 48px;
+  padding: 0.55rem 0.15rem;
+  color: var(--accent);
+  font-weight: 700;
+  cursor: pointer;
+}
+
 nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -103,15 +111,31 @@ a {
   color: var(--accent);
 }
 
-.order {
-  padding-left: 1.5rem;
+.hero-lead {
+  margin-top: 0;
+  font-size: 1.15rem;
 }
 
-.order a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  padding: 0.15rem 0;
+.hero-button {
+  margin: 0.2rem 0 1.25rem;
+}
+
+.ask {
+  margin: 1rem 0;
+  padding: 0.85rem 1rem 1rem;
+  border: 2px solid var(--accent);
+  border-radius: 10px;
+}
+
+.ask figcaption {
+  margin: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.ask p {
+  margin: 0.45rem 0 0;
+  user-select: all;
 }
 
 .confirm {
@@ -143,7 +167,39 @@ a {
 }
 
 a:focus-visible,
-.next-button:focus-visible {
+.next-button:focus-visible,
+.nav-wrap summary:focus-visible {
   outline: 3px solid var(--accent);
   outline-offset: 3px;
+}
+
+@media (max-width: 47.99rem) {
+  .site-header {
+    padding-top: 0.65rem;
+    padding-bottom: 0.35rem;
+  }
+
+  .site-name {
+    margin-bottom: 0;
+  }
+
+  .nav-wrap nav ul {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav-wrap nav a {
+    width: 100%;
+  }
+}
+
+@media (min-width: 48rem) {
+  .nav-wrap summary {
+    display: none;
+  }
+
+  details.nav-wrap:not([open]) > nav,
+  details.nav-wrap[open] > nav {
+    display: block;
+  }
 }

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mokumokumokunn.github.io/zero-kara-grokbot/sitemap.xml
