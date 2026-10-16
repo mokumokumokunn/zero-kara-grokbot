@@ -30,6 +30,7 @@ main,
 }
 
 .site-header {
+  position: relative;
   padding-bottom: 0.5rem;
   border-bottom: 3px solid var(--accent);
 }
@@ -49,7 +50,21 @@ main,
   text-decoration: none;
 }
 
-.nav-wrap summary {
+.nav-toggle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.nav-toggle-label {
+  display: inline-flex;
+  align-items: center;
   min-height: 48px;
   padding: 0.55rem 0.15rem;
   color: var(--accent);
@@ -168,7 +183,7 @@ a {
 
 a:focus-visible,
 .next-button:focus-visible,
-.nav-wrap summary:focus-visible {
+.nav-toggle:focus-visible + .nav-toggle-label {
   outline: 3px solid var(--accent);
   outline-offset: 3px;
 }
@@ -183,23 +198,33 @@ a:focus-visible,
     margin-bottom: 0;
   }
 
-  .nav-wrap nav ul {
+  .nav-toggle:not(:checked) ~ nav {
+    display: none;
+  }
+
+  .nav-toggle:not(:checked) + .nav-toggle-label::after {
+    content: "（開く）";
+    font-weight: 400;
+  }
+
+  .nav-toggle:checked + .nav-toggle-label::after {
+    content: "（閉じる）";
+    font-weight: 400;
+  }
+
+  nav ul {
     flex-direction: column;
     align-items: stretch;
   }
 
-  .nav-wrap nav a {
+  nav a {
     width: 100%;
   }
 }
 
 @media (min-width: 48rem) {
-  .nav-wrap summary {
+  .nav-toggle,
+  .nav-toggle-label {
     display: none;
-  }
-
-  details.nav-wrap:not([open]) > nav,
-  details.nav-wrap[open] > nav {
-    display: block;
   }
 }

@@ -15,9 +15,9 @@
 <body>
   <header class="site-header">
     <p class="site-name"><a href="index.html">ゼロからGrok Bot</a></p>
-    <details class="nav-wrap">
-      <summary>メニュー</summary>
-      <nav aria-label="ページ">
+    <input class="nav-toggle" id="nav-toggle" type="checkbox" aria-controls="site-nav">
+    <label class="nav-toggle-label" for="nav-toggle">メニュー</label>
+    <nav id="site-nav" aria-label="ページ">
         <ul>
           <li><a href="index.html">トップ</a></li>
           <li><a href="what.html">Grok Botとは</a></li>
@@ -30,8 +30,7 @@
           <li><a href="examples.html">活用例</a></li>
           <li><a href="faq.html">よくある質問</a></li>
         </ul>
-      </nav>
-    </details>
+    </nav>
   </header>
   <main>
     <h1>ボットの作り方</h1>
