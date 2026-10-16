@@ -50,26 +50,28 @@ main,
   text-decoration: none;
 }
 
-.nav-toggle {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
-.nav-toggle-label {
-  display: inline-flex;
+.nav-button {
+  display: none;
   align-items: center;
   min-height: 48px;
+  margin: 0;
   padding: 0.55rem 0.15rem;
+  border: 0;
+  background: transparent;
   color: var(--accent);
+  font: inherit;
   font-weight: 700;
   cursor: pointer;
+}
+
+.nav-button[aria-expanded="false"]::after {
+  content: "（開く）";
+  font-weight: 400;
+}
+
+.nav-button[aria-expanded="true"]::after {
+  content: "（閉じる）";
+  font-weight: 400;
 }
 
 nav ul {
@@ -135,6 +137,12 @@ a {
   margin: 0.2rem 0 1.25rem;
 }
 
+.order a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
 .ask {
   margin: 1rem 0;
   padding: 0.85rem 1rem 1rem;
@@ -150,7 +158,30 @@ a {
 
 .ask p {
   margin: 0.45rem 0 0;
+  padding: 0.7rem 0.85rem;
   user-select: all;
+  border-radius: 8px;
+  background: #f4faf7;
+}
+
+.copy-button {
+  display: none;
+}
+
+.js .copy-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  margin-top: 0.75rem;
+  padding: 0.45rem 1rem;
+  border: 0;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .confirm {
@@ -183,7 +214,8 @@ a {
 
 a:focus-visible,
 .next-button:focus-visible,
-.nav-toggle:focus-visible + .nav-toggle-label {
+.nav-button:focus-visible,
+.copy-button:focus-visible {
   outline: 3px solid var(--accent);
   outline-offset: 3px;
 }
@@ -198,18 +230,16 @@ a:focus-visible,
     margin-bottom: 0;
   }
 
-  .nav-toggle:not(:checked) ~ nav {
+  .js .nav-button {
+    display: inline-flex;
+  }
+
+  .js .site-nav ul {
     display: none;
   }
 
-  .nav-toggle:not(:checked) + .nav-toggle-label::after {
-    content: "（開く）";
-    font-weight: 400;
-  }
-
-  .nav-toggle:checked + .nav-toggle-label::after {
-    content: "（閉じる）";
-    font-weight: 400;
+  .js .site-nav ul.is-open {
+    display: flex;
   }
 
   nav ul {
@@ -223,8 +253,7 @@ a:focus-visible,
 }
 
 @media (min-width: 48rem) {
-  .nav-toggle,
-  .nav-toggle-label {
+  .nav-button {
     display: none;
   }
 }

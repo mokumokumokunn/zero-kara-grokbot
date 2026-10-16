@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
+  <script>document.documentElement.classList.add("js");</script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ルーティン｜ゼロからGrok Bot</title>
   <meta name="description" content="保存した指示を、決まった時刻や外の出来事で自動実行するルーティンの説明です。">
@@ -9,16 +10,20 @@
   <meta property="og:description" content="保存した指示を、決まった時刻や外の出来事で自動実行するルーティンの説明です。">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://mokumokumokunn.github.io/zero-kara-grokbot/routines.html">
+  <meta property="og:image" content="https://mokumokumokunn.github.io/zero-kara-grokbot/og-image.png">
+  <meta property="og:site_name" content="ゼロからGrok Bot">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <p class="site-name"><a href="index.html">ゼロからGrok Bot</a></p>
-    <input class="nav-toggle" id="nav-toggle" type="checkbox" aria-controls="site-nav">
-    <label class="nav-toggle-label" for="nav-toggle">メニュー</label>
-    <nav id="site-nav" aria-label="ページ">
-        <ul>
+    <nav class="site-nav" aria-label="ページ">
+      <button type="button" class="nav-button" aria-expanded="false" aria-controls="site-nav-list">メニュー</button>
+      <ul id="site-nav-list">
           <li><a href="index.html">トップ</a></li>
           <li><a href="what.html">Grok Botとは</a></li>
           <li><a href="first-step.html">はじめの一歩</a></li>
@@ -56,5 +61,6 @@
     <p>次は「コネクタ」です。</p>
     <a class="next-button" href="connectors.html">次はこれ</a>
   </footer>
+  <script src="site.js"></script>
 </body>
 </html>
