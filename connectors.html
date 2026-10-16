@@ -4,23 +4,32 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>コネクタ｜ゼロからGrok Bot</title>
+  <meta name="description" content="外のサービスとボットをつなぐコネクタと、コネクタがないウェブサイト用のブラウザの説明です。">
+  <meta property="og:title" content="コネクタ｜ゼロからGrok Bot">
+  <meta property="og:description" content="外のサービスとボットをつなぐコネクタと、コネクタがないウェブサイト用のブラウザの説明です。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://mokumokumokunn.github.io/zero-kara-grokbot/connectors.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <p class="site-name"><a href="index.html">ゼロからGrok Bot</a></p>
-    <nav aria-label="ページ">
-      <ul>
-        <li><a href="index.html">トップ</a></li>
-        <li><a href="what.html">Grok Botとは</a></li>
-        <li><a href="first-step.html">はじめの一歩</a></li>
-        <li><a href="make-bot.html">ボットの作り方</a></li>
-        <li><a href="routines.html">ルーティン</a></li>
-        <li><a href="connectors.html" aria-current="page">コネクタ</a></li>
-        <li><a href="skills.html">スキル</a></li>
-        <li><a href="examples.html">活用例</a></li>
-        <li><a href="faq.html">よくある質問</a></li>
-      </ul>
+    <input class="nav-toggle" id="nav-toggle" type="checkbox" aria-controls="site-nav">
+    <label class="nav-toggle-label" for="nav-toggle">メニュー</label>
+    <nav id="site-nav" aria-label="ページ">
+        <ul>
+          <li><a href="index.html">トップ</a></li>
+          <li><a href="what.html">Grok Botとは</a></li>
+          <li><a href="first-step.html">はじめの一歩</a></li>
+          <li><a href="safety.html">安全に使う</a></li>
+          <li><a href="make-bot.html">ボットの作り方</a></li>
+          <li><a href="routines.html">ルーティン</a></li>
+          <li><a href="connectors.html" aria-current="page">コネクタ</a></li>
+          <li><a href="skills.html">スキル</a></li>
+          <li><a href="examples.html">活用例</a></li>
+          <li><a href="faq.html">よくある質問</a></li>
+        </ul>
     </nav>
   </header>
   <main>
@@ -38,7 +47,7 @@
     <p>サービスは、一度つなげばよいです。</p>
     <p>チャットの中に、connect card が出てきます。connect card は、そのサービスをつなぐためのカードです。そのカードから、一度だけ接続します。画面に出る日本語の名前は、まだ確認していません。</p>
     <p class="confirm">【要確認：connect card の画面上の日本語名、ボタン名、接続が完了するまでの手順】</p>
-    <p>メールをあなたの名前で出す前には、ボットが下書きを見せます。あなたが送る操作をするまで、出ません。</p>
+    <p>あなたの名前でメールを出す前の確認は、<a href="safety.html">安全に使う</a>にまとめてあります。</p>
 
     <h2>コネクタがないウェブサイト</h2>
     <p>それぞれのボットには、自分のコンピュータがあります。そのコンピュータには、ブラウザがあります。</p>
