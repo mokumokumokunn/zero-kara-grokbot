@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <script>document.documentElement.classList.add("js");</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>中級｜ゼロからGrok Bot</title>
+  <meta name="description" content="中級は、Botを何体か使い分け、ルーティンを動かし、外のサービスとつなぐ段階です。読む順番と、その段階の使い方をまとめます。">
+  <meta property="og:title" content="中級｜ゼロからGrok Bot">
+  <meta property="og:description" content="中級は、Botを何体か使い分け、ルーティンを動かし、外のサービスとつなぐ段階です。読む順番と、その段階の使い方をまとめます。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://mokumokumokunn.github.io/zero-kara-grokbot/intermediate.html">
+  <meta property="og:image" content="https://mokumokumokunn.github.io/zero-kara-grokbot/og-image.png">
+  <meta property="og:site_name" content="ゼロからGrok Bot">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <p class="site-name"><a href="index.html">ゼロからGrok Bot</a></p>
+    <nav class="site-nav" aria-label="ページ">
+      <button type="button" class="nav-button" aria-expanded="false" aria-controls="site-nav-list">メニュー</button>
+      <ul id="site-nav-list">
+          <li><a href="index.html">トップ</a></li>
+          <li><a href="beginner.html">初級</a></li>
+          <li><a href="intermediate.html" aria-current="page">中級</a></li>
+          <li><a href="advanced.html">上級</a></li>
+          <li><a href="what.html">Grok Botとは</a></li>
+          <li><a href="first-step.html">はじめの一歩</a></li>
+          <li><a href="safety.html">安全に使う</a></li>
+          <li><a href="make-bot.html">ボットの作り方</a></li>
+          <li><a href="routines.html">ルーティン</a></li>
+          <li><a href="connectors.html">コネクタ</a></li>
+          <li><a href="skills.html">スキル</a></li>
+          <li><a href="examples.html">活用例</a></li>
+          <li><a href="faq.html">よくある質問</a></li>
+        </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>中級</h1>
+    <p>この段階では、Botを何体か使い分けます。ルーティンで、決まった時刻に動かします。メールなどの外のサービスとつなぎます。</p>
+    <p>出す、買う、消す、といった最後の決定は、自分でします。確認のしかたは、<a href="safety.html">安全に使う</a>に書いてあります。</p>
+
+    <h2>読むページの順番</h2>
+    <ol class="order">
+      <li><a href="make-bot.html">ボットの作り方</a></li>
+      <li><a href="routines.html">ルーティン</a></li>
+      <li><a href="connectors.html">コネクタ</a></li>
+    </ol>
+
+    <h2 id="examples">このレベルの例</h2>
+    <p>Xの投稿をもとに紹介しています（2026年10月16日時点）。やり方は人それぞれです。</p>
+
+    <section class="example">
+      <h3>毎週15食の献立と買い物リスト</h3>
+      <p>毎週、15食分の献立と、買い物リストを出させている人がいます。</p>
+      <p><a class="source-link" href="https://x.com/lyndallschreinr/status/2107888353630908437" target="_blank" rel="noopener">出典：X @lyndallschreinr</a></p>
+    </section>
+
+    <section class="example">
+      <h3>写真を加工して、毎朝届ける</h3>
+      <p>Googleドライブ（写真やファイルを置くサービス）の写真を加工して、毎朝届くようにした人です。</p>
+      <p><a class="source-link" href="https://x.com/higedandy_0/status/2110210318408495310" target="_blank" rel="noopener">出典：X @higedandy_0</a></p>
+    </section>
+
+    <section class="example">
+      <h3>朝の音声</h3>
+      <p>ニュース、今日の予定、やることを、毎朝音声で聞いている例です。</p>
+      <p><a class="source-link" href="https://x.com/uphash/status/2107965865631297876" target="_blank" rel="noopener">出典：X @uphash</a></p>
+    </section>
+
+    <section class="example">
+      <h3>前日のブックマークを毎日まとめる</h3>
+      <p>Xで前日に付けたブックマークを、毎日分類してまとめている人です。</p>
+      <p><a class="source-link" href="https://x.com/WajiMalaysia/status/2102678016778436899" target="_blank" rel="noopener">出典：X @WajiMalaysia</a></p>
+    </section>
+
+    <section class="example">
+      <h3>メールを種類で分ける</h3>
+      <p>Botのメールアドレスの @ の前に、「+newsletter」のような文字を足して、種類ごとに分けている人です。メルマガは3行に要約し、領収書は整理します。</p>
+      <p><a class="source-link" href="https://x.com/seisei_ai_1st/status/2110611950451232792" target="_blank" rel="noopener">出典：X @seisei_ai_1st</a></p>
+    </section>
+
+    <section class="example">
+      <h3>朝のメールは、下書きまで</h3>
+      <p>毎朝メールを見て、対応が必要なものに印を付ける使い方です。返信は下書きまでで、送りません。</p>
+      <p><a class="source-link" href="https://x.com/SameerRijh/status/2110113800506499329" target="_blank" rel="noopener">出典：X @SameerRijh</a></p>
+    </section>
+
+    <section class="example">
+      <h3>ほしい物の在庫を見張る</h3>
+      <p>ほしい物リストの在庫や、再入荷を見張らせている例です。</p>
+      <p><a class="source-link" href="https://x.com/yosoymario91/status/2094073115974226214" target="_blank" rel="noopener">出典：X @yosoymario91</a></p>
+    </section>
+
+    <section class="example">
+      <h3>6体で朝会をする</h3>
+      <p>専門のBotを6体そろえて「投資チーム」にし、毎朝のルーティンで朝会を開いている人です。中級と上級のあいだの使い方です。</p>
+      <p><a class="source-link" href="https://x.com/nicosokufx/status/2101439739434061845" target="_blank" rel="noopener">出典：X @nicosokufx</a></p>
+    </section>
+  </main>
+  <footer class="next-step">
+    <p>次は「ボットの作り方」です。</p>
+    <a class="next-button" href="make-bot.html">次はこれ</a>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>

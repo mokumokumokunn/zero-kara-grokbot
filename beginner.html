@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <script>document.documentElement.classList.add("js");</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>初級｜ゼロからGrok Bot</title>
+  <meta name="description" content="初級は、話しかけて1回頼み、下書きをもらい、Botを1体だけ使う段階です。読む順番と、その段階の使い方をまとめます。">
+  <meta property="og:title" content="初級｜ゼロからGrok Bot">
+  <meta property="og:description" content="初級は、話しかけて1回頼み、下書きをもらい、Botを1体だけ使う段階です。読む順番と、その段階の使い方をまとめます。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://mokumokumokunn.github.io/zero-kara-grokbot/beginner.html">
+  <meta property="og:image" content="https://mokumokumokunn.github.io/zero-kara-grokbot/og-image.png">
+  <meta property="og:site_name" content="ゼロからGrok Bot">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <p class="site-name"><a href="index.html">ゼロからGrok Bot</a></p>
+    <nav class="site-nav" aria-label="ページ">
+      <button type="button" class="nav-button" aria-expanded="false" aria-controls="site-nav-list">メニュー</button>
+      <ul id="site-nav-list">
+          <li><a href="index.html">トップ</a></li>
+          <li><a href="beginner.html" aria-current="page">初級</a></li>
+          <li><a href="intermediate.html">中級</a></li>
+          <li><a href="advanced.html">上級</a></li>
+          <li><a href="what.html">Grok Botとは</a></li>
+          <li><a href="first-step.html">はじめの一歩</a></li>
+          <li><a href="safety.html">安全に使う</a></li>
+          <li><a href="make-bot.html">ボットの作り方</a></li>
+          <li><a href="routines.html">ルーティン</a></li>
+          <li><a href="connectors.html">コネクタ</a></li>
+          <li><a href="skills.html">スキル</a></li>
+          <li><a href="examples.html">活用例</a></li>
+          <li><a href="faq.html">よくある質問</a></li>
+        </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>初級</h1>
+    <p>この段階では、話しかけて1回頼みます。返事や下書きをもらいます。Botは、1体だけ使います。</p>
+    <p>まだ、決まった時刻の自動実行や、外のサービスとの接続には進みません。</p>
+
+    <h2>読むページの順番</h2>
+    <ol class="order">
+      <li><a href="what.html">Grok Botとは</a></li>
+      <li><a href="first-step.html">はじめの一歩</a></li>
+      <li><a href="safety.html">安全に使う</a></li>
+      <li><a href="faq.html">よくある質問</a></li>
+    </ol>
+
+    <h2 id="examples">このレベルの例</h2>
+    <p>Xの投稿をもとに紹介しています（2026年10月16日時点）。やり方は人それぞれです。</p>
+
+    <section class="example">
+      <h3>契約書の危ないところを箇条書きにする</h3>
+      <p>29ページの賃貸契約書を渡し、危ない条項を箇条書きで見てもらった人がいます。同じ投稿では、署名もBotにさせたとあります。ここでは、署名をすすめていません。</p>
+      <p>契約や署名など大事なことは、自分で確かめて、自分で決めます。出す前の確認は、<a href="safety.html">安全に使う</a>に書いてあります。</p>
+      <p><a class="source-link" href="https://x.com/mikepat711/status/2098504620289245367" target="_blank" rel="noopener">出典：X @mikepat711</a></p>
+    </section>
+
+    <section class="example">
+      <h3>声で伝えた食材から、1週間の献立</h3>
+      <p>家にある食材を声で伝えると、残り物も使う1週間の献立を出してもらえる、という使い方です。</p>
+      <p><a class="source-link" href="https://x.com/dkmitc/status/2109402706116858172" target="_blank" rel="noopener">出典：X @dkmitc</a></p>
+    </section>
+
+    <section class="example">
+      <h3>書きかけを、アウトラインと初稿にする</h3>
+      <p>書きかけの文章とメモを渡して、骨組みと最初の原稿にしてもらった例です。</p>
+      <p><a class="source-link" href="https://x.com/dad__vibes/status/2101343330655162873" target="_blank" rel="noopener">出典：X @dad__vibes</a></p>
+    </section>
+
+    <section class="example">
+      <h3>最初の五つの仕事</h3>
+      <p>最初の仕事として、メール返信の下書き、朝のまとめ、SNS投稿の下書き、文章の校正、スライド作りを挙げている人です。</p>
+      <p><a class="source-link" href="https://x.com/CalvinHollywood/status/2110747764028043443" target="_blank" rel="noopener">出典：X @CalvinHollywood</a></p>
+    </section>
+
+    <section class="example">
+      <h3>まとめ役を1体だけ作る</h3>
+      <p>最初はまとめ役のBotを1体作り、「どんなBotを作ればいいか」と聞く、という始め方です。</p>
+      <p><a class="source-link" href="https://x.com/liam_fallen/status/2089711701331489260" target="_blank" rel="noopener">出典：X @liam_fallen</a></p>
+    </section>
+
+    <section class="example">
+      <h3>お店探しと、補助金調べ</h3>
+      <p>名古屋のお店を探すBotや、補助金を調べるBotを作った人です。スマホからも使ったと書いています。</p>
+      <p><a class="source-link" href="https://x.com/redcord_okumura/status/2098626769838629336" target="_blank" rel="noopener">出典：X @redcord_okumura</a></p>
+    </section>
+
+    <section class="example">
+      <h3>送らずに、秘書役へ育てる</h3>
+      <p>「予定を伝えたら反映される？」から始めて、勝手に送らないようにしながら、秘書役に育てた例です。</p>
+      <p><a class="source-link" href="https://x.com/matsutomo_e/status/2101969684736446717" target="_blank" rel="noopener">出典：X @matsutomo_e</a></p>
+    </section>
+
+    <section class="example">
+      <h3>声の入力だけで作る</h3>
+      <p>声の入力だけで、Botを作ってきた人です。</p>
+      <p><a class="source-link" href="https://x.com/MarsHomestead/status/2100710208016388236" target="_blank" rel="noopener">出典：X @MarsHomestead</a></p>
+    </section>
+  </main>
+  <footer class="next-step">
+    <p>次は「Grok Botとは」です。</p>
+    <a class="next-button" href="what.html">次はこれ</a>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>

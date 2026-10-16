@@ -5,9 +5,9 @@
   <script>document.documentElement.classList.add("js");</script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>活用例｜ゼロからGrok Bot</title>
-  <meta name="description" content="朝の株の見守り、SNSの下書き、ランニングの週のふりかえり、なぞなぞの相手という四つの使い方です。">
+  <meta name="description" content="初級、中級、上級の使い方への入口です。Xの投稿をもとにした例と、よく出てきたすすめをまとめています。">
   <meta property="og:title" content="活用例｜ゼロからGrok Bot">
-  <meta property="og:description" content="朝の株の見守り、SNSの下書き、ランニングの週のふりかえり、なぞなぞの相手という四つの使い方です。">
+  <meta property="og:description" content="初級、中級、上級の使い方への入口です。Xの投稿をもとにした例と、よく出てきたすすめをまとめています。">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://mokumokumokunn.github.io/zero-kara-grokbot/examples.html">
   <meta property="og:image" content="https://mokumokumokunn.github.io/zero-kara-grokbot/og-image.png">
@@ -25,6 +25,9 @@
       <button type="button" class="nav-button" aria-expanded="false" aria-controls="site-nav-list">メニュー</button>
       <ul id="site-nav-list">
           <li><a href="index.html">トップ</a></li>
+          <li><a href="beginner.html">初級</a></li>
+          <li><a href="intermediate.html">中級</a></li>
+          <li><a href="advanced.html">上級</a></li>
           <li><a href="what.html">Grok Botとは</a></li>
           <li><a href="first-step.html">はじめの一歩</a></li>
           <li><a href="safety.html">安全に使う</a></li>
@@ -39,26 +42,44 @@
   </header>
   <main>
     <h1>活用例</h1>
-    <p>ここでは、Grok Botの使い方の例を四つ紹介します。画面のボタン名は、確認できていないので書きません。</p>
-    <p>あなたの名前で外に出すときの確認は、<a href="safety.html">安全に使う</a>に書いてあります。</p>
+    <p>Xの投稿をもとに紹介しています（2026年10月16日時点）。やり方は人それぞれです。</p>
+    <p>例の本文は、レベルのページに置いてあります。画面のボタン名は、確認できていないので書きません。</p>
+    <p>公式の活用例は、<a class="source-link" href="https://docs.x.ai/grok-bot/use-cases" target="_blank" rel="noopener">公式の活用例</a>にあります。</p>
 
-    <h2>朝の株の見守り報告</h2>
-    <p>毎朝、見ておきたい株の動きを、短い報告にまとめてもらえます。</p>
-    <p>毎朝の実行は、ルーティンにできます。ルーティンは、あなたが離れていても動きます。</p>
-    <p>数字をどのウェブサイトで見るかは、頼むときに伝えます。コネクタがないウェブサイトは、ボット自身のブラウザで開けます。</p>
+    <section class="tips">
+      <h2>よく出てきたおすすめの使い方</h2>
+      <ol>
+        <li>
+          最初は、Bot 1体に仕事を1つずつ持たせます。
+          <a class="source-link" href="https://x.com/kocer_eth/status/2106010809855807681" target="_blank" rel="noopener">出典：X @kocer_eth</a>
+        </li>
+        <li>
+          まず自分の手で1回やり、うまくいったらスキルにし、そのあとルーティンにします。
+          <a class="source-link" href="https://x.com/GrokBotRadar/status/2104304589797556457" target="_blank" rel="noopener">出典：X @GrokBotRadar</a>
+        </li>
+        <li>
+          送信、公開、購入、削除は、人が承認します。Botがやるのは下書きまでです。くわしくは<a href="safety.html">安全に使う</a>。
+          <a class="source-link" href="https://x.com/RRRangle/status/2102119255609065640" target="_blank" rel="noopener">出典：X @RRRangle</a>
+        </li>
+        <li>
+          いちばんよく挙がる使い方は、毎朝のまとめです。
+          <a class="source-link" href="https://x.com/ayami_marketing/status/2110753845852926197" target="_blank" rel="noopener">出典：X @ayami_marketing</a>
+        </li>
+        <li>Botごとに担当を決めます。重いコードの作業は、クラウドエージェント（インターネット上でコードの作業を進める係）に回します。</li>
+      </ol>
+    </section>
 
-    <h2>SNSの投稿の下書き</h2>
-    <p>SNSとは、短い文章を公開するサービスのことです。</p>
-    <p>投稿の文面を、下書きとして作れます。文章の雰囲気や長さを、頼むときに伝えます。</p>
+    <h2>初級</h2>
+    <p>話しかけて1回頼み、下書きをもらい、Botを1体だけ使う例です。SNSの投稿の下書きや、なぞなぞの相手も、この段階です。</p>
+    <p><a href="beginner.html#examples">初級の例を見る</a></p>
 
-    <h2>ランニング練習の、週のふりかえり</h2>
-    <p>一週間の練習を、短いふりかえりにまとめてもらえます。練習で気づいたことを伝えると、ボットが週のまとめを作れます。</p>
-    <p>毎週同じ曜日に自動で始めたいときは、ルーティンを使います。</p>
-    <p>練習の記録が、コネクタのないウェブサイトにあるときは、ボットのブラウザで開けます。</p>
+    <h2>中級</h2>
+    <p>Botを何体か使い分け、ルーティンやサービスとの連携をする例です。朝の株の見守り報告や、ランニング練習の週のふりかえりも、この段階です。</p>
+    <p><a href="intermediate.html#examples">中級の例を見る</a></p>
 
-    <h2>なぞなぞの相手</h2>
-    <p>チャットで、なぞなぞを出し合えます。出題する係にも、一緒に考える相手にもなれます。</p>
-    <p>遊び専用のボットを作り、役割をなぞなぞの相手にしておけます。会話と記憶は、そのボットの中に残ります。</p>
+    <h2>上級</h2>
+    <p>Bot同士で仕事を渡し合い、スキルやwebhook、コード作業やクラウドエージェントを使う例です。</p>
+    <p><a href="advanced.html#examples">上級の例を見る</a></p>
   </main>
   <footer class="next-step">
     <p>次は「よくある質問」です。</p>
