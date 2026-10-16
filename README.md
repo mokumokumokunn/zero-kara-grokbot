@@ -1,1 +1,7 @@
-# zero-kara-grokbot
+# ゼロからGrok Bot
+
+AIを初めて使う人向けの、Grok Bot入門サイトです。HTMLとCSSだけの静的サイトで、GitHub Pages のプロジェクトサイト（`/zero-kara-grokbot/`）での公開を想定しています。
+
+ページ内のリンクは相対パスです。操作手順のうち、実物の画面をまだ確認していない箇所は【要確認】と書いてあります。
+
+GitHub Pages の有効化は、リポジトリの所有者が行います。
