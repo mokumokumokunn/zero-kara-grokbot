@@ -21,6 +21,16 @@
 <body>
   <header class="site-header">
     <p class="site-name"><a href="index.html">ゼロからGrok Bot</a></p>
+    <form class="site-search" action="faq.html" role="search">
+      <div class="search-row">
+        <label class="search-label" for="site-search">サイト内検索</label>
+        <input id="site-search" class="search-input" type="search" name="q" placeholder="言葉を入力" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search" aria-autocomplete="list" aria-controls="search-panel" aria-expanded="false">
+      </div>
+      <div id="search-panel" class="search-panel" hidden>
+        <p id="search-status" class="search-status" aria-live="polite"></p>
+        <ul id="search-results" class="search-results"></ul>
+      </div>
+    </form>
     <nav class="site-nav" aria-label="ページ">
       <button type="button" class="nav-button" aria-expanded="false" aria-controls="site-nav-list">メニュー</button>
       <ul id="site-nav-list">
