@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <script>document.documentElement.classList.add("js");</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>上級｜ゼロからGrok Bot</title>
+  <meta name="description" content="上級は、Bot同士で仕事を渡し合い、スキルやwebhook、コード作業やクラウドエージェントを使う段階です。">
+  <meta property="og:title" content="上級｜ゼロからGrok Bot">
+  <meta property="og:description" content="上級は、Bot同士で仕事を渡し合い、スキルやwebhook、コード作業やクラウドエージェントを使う段階です。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://mokumokumokunn.github.io/zero-kara-grokbot/advanced.html">
+  <meta property="og:image" content="https://mokumokumokunn.github.io/zero-kara-grokbot/og-image.png">
+  <meta property="og:site_name" content="ゼロからGrok Bot">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <p class="site-name"><a href="index.html">ゼロからGrok Bot</a></p>
+    <nav class="site-nav" aria-label="ページ">
+      <button type="button" class="nav-button" aria-expanded="false" aria-controls="site-nav-list">メニュー</button>
+      <ul id="site-nav-list">
+          <li><a href="index.html">トップ</a></li>
+          <li><a href="beginner.html">初級</a></li>
+          <li><a href="intermediate.html">中級</a></li>
+          <li><a href="advanced.html" aria-current="page">上級</a></li>
+          <li><a href="what.html">Grok Botとは</a></li>
+          <li><a href="first-step.html">はじめの一歩</a></li>
+          <li><a href="safety.html">安全に使う</a></li>
+          <li><a href="make-bot.html">ボットの作り方</a></li>
+          <li><a href="routines.html">ルーティン</a></li>
+          <li><a href="connectors.html">コネクタ</a></li>
+          <li><a href="skills.html">スキル</a></li>
+          <li><a href="examples.html">活用例</a></li>
+          <li><a href="faq.html">よくある質問</a></li>
+        </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>上級</h1>
+    <p>この段階では、Bot同士で仕事を渡し合います。やり方はスキルとして保存します。webhookで外からの知らせを受けたり、コードの作業をクラウドエージェントに任せたりします。</p>
+    <p>webhook（ウェブフック）は、外から「何かが起きた」と知らせを受け取るしくみです。クラウドエージェントは、インターネット上のコンピュータで、コードの作業を進める係です。</p>
+    <p>公式の説明は、<a href="https://docs.x.ai/grok-bot/skills-routines-and-automations" target="_blank" rel="noopener">公式：スキル、ルーティン、自動化</a>にあります。</p>
+
+    <h2>読むページの順番</h2>
+    <ol class="order">
+      <li><a href="skills.html">スキル</a></li>
+      <li><a href="#examples">このページの上級の例</a></li>
+    </ol>
+
+    <h2 id="examples">このレベルの例</h2>
+    <p>Xの投稿をもとに紹介しています（2026年10月16日時点）。やり方は人それぞれです。</p>
+
+    <section class="example">
+      <h3>7体で発信を回す</h3>
+      <p>7体のチームで発信を回している人です。まとめ役が仕事を振り分け、やり方はスキルとして保存しています。</p>
+      <p><a class="source-link" href="https://x.com/ridark_eth/status/2092292504066429381" target="_blank" rel="noopener">出典：X @ridark_eth</a></p>
+    </section>
+
+    <section class="example">
+      <h3>11体を担当で分ける</h3>
+      <p>11体を運用している人です。まとめ、計画、見張り、生活の担当に分け、Bot同士でも会話させています。</p>
+      <p><a class="source-link" href="https://x.com/petergyang/status/2099502180378296394" target="_blank" rel="noopener">出典：X @petergyang</a></p>
+    </section>
+
+    <section class="example">
+      <h3>相談から公開まで</h3>
+      <p>Cursor（コードを書くためのアプリ）と連携して、アプリの相談から実装、公開まで進めた例です。</p>
+      <p><a class="source-link" href="https://x.com/_inady_/status/2090393758617772054" target="_blank" rel="noopener">出典：X @_inady_</a></p>
+    </section>
+
+    <section class="example">
+      <h3>4体の部屋で試作品を作る</h3>
+      <p>スキルを足して、4体が同じ会話に入る部屋を作り、ハッカソン（短い時間で試作品を作る催し）用の試作品を作らせた人です。</p>
+      <p><a class="source-link" href="https://x.com/weeb3dev/status/2098226447831765134" target="_blank" rel="noopener">出典：X @weeb3dev</a></p>
+    </section>
+
+    <section class="example">
+      <h3>検索の分析と記事の改善</h3>
+      <p>Search Console（サイトが検索でどう見られているかを知るサービス）や GitHub Actions（決まった作業を自動で走らせるしくみ）とつないで、SEO（検索で見つけてもらいやすくすること）の分析と記事の改善をしている例です。</p>
+      <p><a class="source-link" href="https://x.com/tabibitohoda/status/2095684390282227944" target="_blank" rel="noopener">出典：X @tabibitohoda</a></p>
+    </section>
+
+    <section class="example">
+      <h3>毎晩、ほかのBotを点検する</h3>
+      <p>毎晩0時に、1体がほかのBotを点検して、直し方を提案する使い方です。</p>
+      <p><a class="source-link" href="https://x.com/KellehEyad/status/2108505265880371670" target="_blank" rel="noopener">出典：X @KellehEyad</a></p>
+    </section>
+
+    <section class="example">
+      <h3>問い合わせを、クラウドエージェントに調べさせる</h3>
+      <p>webhookで受けた問い合わせを、クラウドエージェントに調べさせている人です。投稿した人は、文章の質はまだ微妙だとも書いています。</p>
+      <p><a class="source-link" href="https://x.com/euboid/status/2097306760096752002" target="_blank" rel="noopener">出典：X @euboid</a></p>
+    </section>
+  </main>
+  <footer class="next-step">
+    <p>次は「スキル」です。</p>
+    <a class="next-button" href="skills.html">次はこれ</a>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>
